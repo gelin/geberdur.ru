@@ -1,0 +1,9 @@
+image: python:3
+pipelines:
+  default:
+    - step:
+        script:
+          - make pip
+          - make build
+          - make deploy
+
