@@ -17,12 +17,16 @@ pip:
 mkdir:
 	mkdir -p build
 
+
 index: mkdir build/index.html
 
 build/index.html:
 	bin/index.py
 
+
 static: build/favicon.ico
 
 build/favicon.ico:
 	cp -rv src/static/* build/
+
+

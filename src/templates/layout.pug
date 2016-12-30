@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title Гебердур
+    meta(charset="UTF-8")
     link(rel="apple-touch-icon", sizes="57x57", href="/apple-icon-57x57.png")
     link(rel="apple-touch-icon", sizes="60x60", href="/apple-icon-60x60.png")
     link(rel="apple-touch-icon", sizes="72x72", href="/apple-icon-72x72.png")
@@ -19,7 +19,13 @@ html
     meta(name="msapplication-TileColor", content="#ffffff")
     meta(name="msapplication-TileImage", content="/ms-icon-144x144.png")
     meta(name="theme-color", content="#ffffff")
+    link(href="http://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+    link(type="text/css", rel="stylesheet", href="/css/materialize.min.css", media="screen,projection")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Гебердур
     block head
   body
     .container
       block content
+    script(type="text/javascript", src="/js/jquery-2.1.1.min.js")
+    script(type="text/javascript", src="/js/materialize.min.js")
