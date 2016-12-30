@@ -1,9 +1,15 @@
+RSYNC_HOST=141.8.195.84
+RSYNC_PATH=domains/geberdur.ru/public_html
+
 all: build
 
 clean:
 	rm -rf build
 
 build: index
+
+deploy:
+	rsync -rlptvz build/ $(RSYNC_HOST):$(RSYNC_PATH)/
 
 pip:
 	pip3 install -r requirements.txt
