@@ -9,7 +9,8 @@ clean:
 build: index static
 
 deploy:
-	rsync -rlptvz build/ $(RSYNC_HOST):$(RSYNC_PATH)/
+#	rsync -rlptvz build/ $(RSYNC_HOST):$(RSYNC_PATH)/
+	./bin/ftpsync.sh
 
 pip:
 	pip3 install -r requirements.txt
@@ -21,7 +22,7 @@ mkdir:
 index: mkdir build/index.html
 
 build/index.html:
-	bin/index.py
+	./bin/index.py
 
 
 static: build/favicon.ico
