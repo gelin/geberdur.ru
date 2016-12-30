@@ -6,7 +6,7 @@ all: build
 clean:
 	rm -rf build
 
-build: index
+build: index static
 
 deploy:
 	rsync -rlptvz build/ $(RSYNC_HOST):$(RSYNC_PATH)/
@@ -21,3 +21,8 @@ index: mkdir build/index.html
 
 build/index.html:
 	bin/index.py
+
+static: build/favicon.ico
+
+build/favicon.ico:
+	cp -rv src/static/* build/
