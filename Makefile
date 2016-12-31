@@ -11,7 +11,7 @@ clean:
 build: index static
 
 deploy:
-	rsync -rlpvz build/ $(RSYNC_USER)@$(RSYNC_HOST):$(RSYNC_REMOTE_PATH)/
+	rsync -rlptvz build/ $(RSYNC_USER)@$(RSYNC_HOST):$(RSYNC_REMOTE_PATH)/
 
 pip:
 	pip3 install -r requirements.txt
@@ -29,7 +29,7 @@ build/index.html:
 static: build/favicon.ico
 
 build/favicon.ico:
-	cp -rv src/static/* build/
+	cp -av src/static/* build/
 
 
 docker-build:

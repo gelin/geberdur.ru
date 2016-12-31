@@ -1,8 +1,16 @@
 #!/usr/bin/env python3
 
+import os
 from mako.template import Template
 from mako.lookup import TemplateLookup
 from pypugjs.ext.mako import preprocessor as pug_preprocessor
+
+
+def tales_list():
+    for f in filter(lambda fname: fname.endswith('.md'),
+                    sorted(os.listdir('src/tales'))):
+        pass
+
 
 
 def main():
