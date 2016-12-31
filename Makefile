@@ -6,7 +6,7 @@ RSYNC_REMOTE_PATH?=domains/geberdur.ru/public_html
 all: build
 
 clean:
-	rm -rf build
+	rm -rf build/*
 
 build: index static
 
