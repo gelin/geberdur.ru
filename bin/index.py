@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+"""
+Renders index.html
+"""
+
 
 import os
 import os.path
@@ -35,11 +39,11 @@ def list_tales():
 
 
 def main():
-    with open('build/index.html', 'wt') as f:
+    with open('build/index.html', 'wt') as htmlfile:
         lookup = TemplateLookup(directories=['src/templates'],
                                 input_encoding='utf-8',
                                 preprocessor=pug_preprocessor)
-        f.write(lookup.get_template('index.pug').render(
+        htmlfile.write(lookup.get_template('index.pug').render(
             tales=list(list_tales())
         ))
 

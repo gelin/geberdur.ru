@@ -8,7 +8,7 @@ all: build
 clean:
 	rm -rf build/*
 
-build: index static
+build: static tales index
 
 deploy:
 	rsync -rlptvz build/ $(RSYNC_USER)@$(RSYNC_HOST):$(RSYNC_REMOTE_PATH)/
@@ -16,19 +16,25 @@ deploy:
 pip:
 	pip3 install -r requirements.txt
 
-mkdir:
-	mkdir -p build
+mkdirs:
+	mkdir -p build/tale
 
 
-index: mkdir build/index.html
+index: mkdirs build/index.html
 
 build/index.html:
 	./bin/index.py
 
 
-static: build/favicon.ico
+tales: mkdirs build/tale/*
 
-build/favicon.ico:
+build/tale/%: src/tales/%.md
+	./bin/tale.py $<
+
+
+static: mkdirs build/*.ico
+
+build/*.ico:
 	cp -av src/static/* build/
 
 
