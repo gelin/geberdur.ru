@@ -20,22 +20,18 @@ mkdirs:
 	mkdir -p build/tale
 
 
-index: mkdirs build/index.html
-
-build/index.html:
+index: mkdirs
 	./bin/index.py
 
 
-tales: mkdirs build/tale/*
+tales: mkdirs tale
 
-build/tale/%: src/tales/%.md
-	./bin/tale.py $<
+tale: $(wildcard src/tales/*.md)
+	$(foreach t, $^ , ./bin/tale.py $t;)
 
 
-static: mkdirs build/*.ico
-
-build/*.ico:
-	cp -av src/static/* build/
+static: mkdirs
+	cp -a src/static/* build/
 
 
 docker-build:
