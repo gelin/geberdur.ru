@@ -1,5 +1,7 @@
-RSYNC_HOST=141.8.195.84
-RSYNC_PATH=domains/geberdur.ru/public_html
+RSYNC_USER?=gelin
+RSYNC_HOST?=141.8.195.84
+RSYNC_REMOTE_PATH?=domains/geberdur.ru/public_html
+
 
 all: build
 
@@ -9,8 +11,7 @@ clean:
 build: index static
 
 deploy:
-#	rsync -rlptvz build/ $(RSYNC_HOST):$(RSYNC_PATH)/
-	./bin/ftpsync.sh
+	rsync -rlpvz build/ $(RSYNC_USER)@$(RSYNC_HOST):$(RSYNC_REMOTE_PATH)/
 
 pip:
 	pip3 install -r requirements.txt
@@ -31,3 +32,8 @@ build/favicon.ico:
 	cp -rv src/static/* build/
 
 
+docker-build:
+	docker build -f src/docker/Dockerfile -t gelin/geberdur.ru-pipeline .
+
+docker-push:
+	docker push gelin/geberdur.ru-pipeline

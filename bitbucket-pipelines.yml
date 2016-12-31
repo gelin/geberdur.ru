@@ -1,9 +1,8 @@
-image: python:3
+image: gelin/geberdur.ru-pipeline
 pipelines:
   default:
     - step:
         script:
-          - make pip
           - make build
+          - (umask  077 ; echo $DEPLOY_SSH_KEY | base64 --decode > ~/.ssh/id_rsa)
           - make deploy
-
