@@ -1,4 +1,6 @@
 extends layout
 block append content
   h1 Сказки про Гебердура
-  p Скоро будут
+  .collection
+    each tale in tales
+      a.collection-item(href='/tale/{}/'.format(tale['link']))=tale['title']
