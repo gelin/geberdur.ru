@@ -30,7 +30,7 @@ build/index.html: src/templates/index.pug src/tales/*.md
 
 tales: mkdirs build/tale/*/index.html
 
-build/tale/%/index.html: src/templates/tale.pug src/tales/*-%.md
+build/tale/%/index.html: src/templates/tale.pug src/tales/%.md
 	./bin/tales.py $^
 
 

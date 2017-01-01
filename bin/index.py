@@ -6,6 +6,7 @@ Renders index.html
 
 import os
 import os.path
+import re
 import codecs
 from mako.lookup import TemplateLookup
 from pypugjs.ext.mako import preprocessor as pug_preprocessor
@@ -25,8 +26,8 @@ class HeaderCatcher(hoep.Hoep):
 
 
 def list_tales():
-    for mdfile in filter(lambda f: f.endswith('.md'),
-                    sorted(os.listdir('src/tales'))):
+    talepattern = re.compile(r'(.*/)?[^\-]+-.+.md')
+    for mdfile in filter(talepattern.match, sorted(os.listdir('src/tales'))):
         tale = {
             'link': mdfile.split('-', maxsplit=1)[1].rsplit('.', maxsplit=1)[0]
         }
