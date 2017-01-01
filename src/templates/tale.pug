@@ -7,7 +7,7 @@ block append content
     .btn-group.btn-group-justified(role="group")
 
       if prev_tale
-        a.btn.btn-default(href='/tale/{}/'.format(prev_tale['link']), role="button")
+        a.btn.btn-default(href='/tale/{}/'.format(prev_tale['link']), role="button", rel="prev")
           span.glyphicon.glyphicon-chevron-left
           =' '
           | Предыдущая
@@ -23,7 +23,7 @@ block append content
         | Другие
 
       if next_tale
-        a.btn.btn-default(href='/tale/{}/'.format(next_tale['link']), role="button")
+        a.btn.btn-default(href='/tale/{}/'.format(next_tale['link']), role="button", rel="next")
           | Следующая
           =' '
           span.glyphicon.glyphicon-chevron-right
