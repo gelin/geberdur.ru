@@ -1,8 +1,8 @@
 jQuery(function($) {
 
   var themes = [
-    '/css/bootstrap-flatly.min.css',
-    '/css/bootstrap-darkly.min.css'
+    '/css/bootstrap-serif.min.css',
+    '/css/bootstrap-serif-dark.min.css'
   ];
 
   function supports_html5_storage() {

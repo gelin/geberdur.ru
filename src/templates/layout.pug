@@ -24,14 +24,14 @@ html(lang="ru")
     meta(name="theme-color", content="#ffffff")
 
     link(href="/css/bootstrap.min.css", rel="stylesheet")
-    link(href="/css/bootstrap-flatly.min.css", rel="stylesheet", title="main")
+    link(href="/css/bootstrap-serif.min.css", rel="stylesheet", title="main")
 
     title Гебердур
     block head
   body
     .container
       .pull-right.hidden-print
-        button.btn.btn-default#theme-switch(type="button")
+        button.btn.btn-default#theme-switch(type="button", title="День/Hoчь")
           span.glyphicon.glyphicon-adjust
       block content
     script(type="text/javascript", src="/js/jquery-1.12.4.min.js")
