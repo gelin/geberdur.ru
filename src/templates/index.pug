@@ -1,6 +1,7 @@
 extends layout
 block append content
-  h1 Сказки про Гебердура
+  .page-header
+    h1 Сказки про Гебердура
   .list-group
     each tale in tales
       a.list-group-item(href='/tale/{}/'.format(tale['link']))=tale['title']

@@ -12,6 +12,9 @@ from pypugjs.ext.mako import preprocessor as pug_preprocessor
 import hoep
 
 
+TALE_PATTERN = re.compile(r'(.*/)?[^\-]+-.+.md')
+
+
 class Markdown(object):
 
     def __init__(self, mdfile):
@@ -22,7 +25,38 @@ class Markdown(object):
         return hoep.render(self.text)
 
 
-def render_tale(talefile):
+class TalesNavigator(object):
+
+    def __init__(self):
+        self.tales = list(self.list_tales())
+        self.talesdict = {}
+        self.fill_dict()
+
+    @staticmethod
+    def list_tales():
+        for mdfile in filter(TALE_PATTERN.match, sorted(os.listdir('src/tales'))):
+            tale = {
+                'link': mdfile.split('-', maxsplit=1)[1].rsplit('.', maxsplit=1)[0]
+            }
+            yield tale
+
+    def fill_dict(self):
+        prev = None
+        for tale in self.tales:
+            self.talesdict[tale['link']] = tale
+            if prev is not None:
+                tale['prev_tale'] = prev
+                prev['next_tale'] = tale
+            prev = tale
+
+    def find_next_tale(self, talelink):
+        return self.talesdict[talelink].get('next_tale')
+
+    def find_prev_tale(self, talelink):
+        return self.talesdict[talelink].get('prev_tale')
+
+
+def render_tale(talefile, navigator):
     tale = talefile.split('-', maxsplit=1)[1].rsplit('.', maxsplit=1)[0]
     print('Building tale/{}/index.html'.format(tale))
     os.makedirs('build/tale/{}'.format(tale), exist_ok=True)
@@ -31,14 +65,16 @@ def render_tale(talefile):
                                 input_encoding='utf-8',
                                 preprocessor=pug_preprocessor)
         htmlfile.write(lookup.get_template('tale.pug').render(
-            tale=Markdown(talefile)
+            tale=Markdown(talefile),
+            next_tale=navigator.find_next_tale(tale),
+            prev_tale=navigator.find_prev_tale(tale)
         ))
 
 
 def main(args):
-    talepattern = re.compile(r'(.*/)?[^\-]+-.+.md')
-    for talefile in filter(talepattern.match, args):
-        render_tale(talefile)
+    navigator = TalesNavigator()
+    for talefile in filter(TALE_PATTERN.match, args):
+        render_tale(talefile, navigator)
 
 
 if __name__ == '__main__':

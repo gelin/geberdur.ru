@@ -1,3 +1,34 @@
 extends layout
 block append content
   !=tale.render()
+
+  .hidden-print
+    hr
+    .btn-group.btn-group-justified(role="group")
+
+      if prev_tale
+        a.btn.btn-default(href='/tale/{}/'.format(prev_tale['link']), role="button")
+          span.glyphicon.glyphicon-chevron-left
+          =' '
+          | Предыдущая
+      else
+        a.btn.btn-default.disabled(href="#")
+          span.glyphicon.glyphicon-chevron-left
+          =' '
+          | Предыдущая
+
+      a.btn.btn-default(href="/", role="button")
+        span.glyphicon.glyphicon-chevron-up
+        =' '
+        | Другие
+
+      if next_tale
+        a.btn.btn-default(href='/tale/{}/'.format(next_tale['link']), role="button")
+          | Следующая
+          =' '
+          span.glyphicon.glyphicon-chevron-right
+      else
+        a.btn.btn-default.disabled(href="#")
+          | Следующая
+          =' '
+          span.glyphicon.glyphicon-chevron-right
