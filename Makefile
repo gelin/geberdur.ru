@@ -42,7 +42,7 @@ build/%: src/static/%
 
 
 docker-build:
-	docker build -f src/docker/Dockerfile -t gelin/geberdur.ru-pipeline .
+	docker build -f docker/Dockerfile -t gelin/geberdur.ru-pipeline .
 
 docker-push:
 	docker push gelin/geberdur.ru-pipeline
