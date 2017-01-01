@@ -4,6 +4,7 @@ Renders /tale/*/index.html.
 """
 
 import sys
+import re
 import os.path
 import codecs
 from mako.lookup import TemplateLookup
@@ -21,8 +22,9 @@ class Markdown(object):
         return hoep.render(self.text)
 
 
-def main(talefile):
+def render_tale(talefile):
     tale = talefile.split('-', maxsplit=1)[1].rsplit('.', maxsplit=1)[0]
+    print('Building tale/{}/index.html'.format(tale))
     os.makedirs('build/tale/{}'.format(tale), exist_ok=True)
     with open('build/tale/{}/index.html'.format(tale), 'wt') as htmlfile:
         lookup = TemplateLookup(directories=['src/templates'],
@@ -33,8 +35,14 @@ def main(talefile):
         ))
 
 
+def main(args):
+    talepattern = re.compile(r'(.*/)?[^\-]+-.+.md')
+    for talefile in filter(talepattern.match, args):
+        render_tale(talefile)
+
+
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        print('Usage: tale.py src/tales/__.md')
+        print('Usage: tale.py src/tales/__.md ..')
         exit(1)
-    main(sys.argv[1])
+    main(sys.argv[1:])

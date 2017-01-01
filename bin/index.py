@@ -39,6 +39,7 @@ def list_tales():
 
 
 def main():
+    print('Building index.html')
     with open('build/index.html', 'wt') as htmlfile:
         lookup = TemplateLookup(directories=['src/templates'],
                                 input_encoding='utf-8',
