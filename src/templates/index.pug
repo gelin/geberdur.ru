@@ -1,9 +1,13 @@
 extends layout
+
+block append head
+  title Гебердур
+
 block append content
   .page-header
     h1 Сказки про Гебердура
   .list-group
     each tale in tales
-      a.list-group-item(href='/tale/{}/'.format(tale['link']))=tale['title']
+      a.list-group-item(href='/tale/{}/'.format(tale.link))=tale.title
 
   p ... и другие

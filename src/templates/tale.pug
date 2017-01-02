@@ -1,4 +1,11 @@
 extends layout
+
+block append head
+  title
+    =tale.title
+    =' - '
+    | Гебердур
+
 block append content
   !=tale.render()
 
@@ -6,8 +13,8 @@ block append content
     hr
     .btn-group.btn-group-justified(role="group")
 
-      if prev_tale
-        a.btn.btn-default(href='/tale/{}/'.format(prev_tale['link']), role="button", rel="prev")
+      if tale.prev
+        a.btn.btn-default(href='/tale/{}/'.format(tale.prev.link), role="button", rel="prev")
           span.glyphicon.glyphicon-chevron-left
           =' '
           | Предыдущая
@@ -22,8 +29,8 @@ block append content
         =' '
         | Другие
 
-      if next_tale
-        a.btn.btn-default(href='/tale/{}/'.format(next_tale['link']), role="button", rel="next")
+      if tale.next
+        a.btn.btn-default(href='/tale/{}/'.format(tale.next.link), role="button", rel="next")
           | Следующая
           =' '
           span.glyphicon.glyphicon-chevron-right
