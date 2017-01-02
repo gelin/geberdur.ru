@@ -1,0 +1,11 @@
+doctype xml
+rss(version="2.0")
+  channel
+    title Сказки про Гебердура
+    link https://geberdur.ru/
+    language ru
+    lastBuildDate=buildDate
+    each tale in tales
+      item
+        title=tale.title
+        link='https://geberdur.ru/tale/{}/'.format(tale.link)

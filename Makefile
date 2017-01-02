@@ -8,7 +8,7 @@ all: build
 clean:
 	rm -rf build/*
 
-build: static tales index
+build: static tales index feed
 
 deploy:
 	rsync -rlptvz build/ $(RSYNC_USER)@$(RSYNC_HOST):$(RSYNC_REMOTE_PATH)/
@@ -39,6 +39,12 @@ static: mkdirs build/*.ico build/*.png build/*.json build/js/* build/css/*
 build/%: src/static/%
 	@echo Copying static resources
 	cp -a src/static/* build/
+
+
+feed: mkdirs build/feed.xml
+
+build/feed.xml: src/templates/rss.pug src/tales/*.md
+	./bin/feed.py
 
 
 docker-build:
