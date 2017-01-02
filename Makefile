@@ -34,7 +34,7 @@ build/tale/%/index.html: src/templates/layout.pug src/templates/tale.pug src/tal
 	./bin/tales.py $^
 
 
-static: mkdirs build/*.ico
+static: mkdirs build/*.ico build/*.png build/js/* build/css/*
 
 build/%: src/static/%
 	@echo Copying static resources

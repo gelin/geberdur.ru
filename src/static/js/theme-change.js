@@ -1,4 +1,4 @@
-jQuery(function($) {
+(function() {
 
   var themes = [
     '/css/bootstrap-serif.min.css',
@@ -22,6 +22,13 @@ jQuery(function($) {
     }
   }
 
+  if (supports_storage) {
+    var theme = localStorage.theme;
+    if (theme) {
+      set_theme(theme);
+    }
+  }
+
   function switch_theme() {
     var current_theme = $('link[title="main"]').attr('href');
     var current_index = themes.indexOf(current_theme);
@@ -32,20 +39,14 @@ jQuery(function($) {
     set_theme(themes[next_index]);
   }
 
-  if (supports_storage) {
-    var theme = localStorage.theme;
-    if (theme) {
-      set_theme(theme);
+  $(function() {
+    if (supports_storage) {
+      $('#theme-switch').click(function() {
+        switch_theme();
+      });
+    } else {
+      $('#theme-switch').hide();
     }
-    $('#theme-switch').click(function() {
-      switch_theme();
-    });
-  } else {
-    $('#theme-switch').hide();
-  }
+  });
 
-
-
-});
-
-
+}());

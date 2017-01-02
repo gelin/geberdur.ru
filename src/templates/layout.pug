@@ -3,7 +3,7 @@ html(lang="ru")
   head
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
     link(rel="apple-touch-icon", sizes="57x57", href="/apple-icon-57x57.png")
     link(rel="apple-touch-icon", sizes="60x60", href="/apple-icon-60x60.png")
@@ -29,14 +29,14 @@ html(lang="ru")
     title Гебердур
     block head
   body
+    script(type="text/javascript", src="/js/jquery-1.12.4.min.js")
+    script(type="text/javascript", src="/js/theme-change.js")
     .container
       .pull-right.hidden-print
         button.btn.btn-default#theme-switch(type="button", title="День/Hoчь")
           span.glyphicon.glyphicon-adjust
       block content
-    script(type="text/javascript", src="/js/jquery-1.12.4.min.js")
     script(type="text/javascript", src="/js/bootstrap.min.js")
-    script(type="text/javascript", src="/js/theme-change.js")
     script
       | (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       | (i[r].q=i[r].q || []).push(arguments)},i[r].l=1 * new Date();a=s.createElement(o),
