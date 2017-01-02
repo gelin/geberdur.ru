@@ -24,13 +24,13 @@ build/tale:
 
 index: mkdirs build/index.html
 
-build/index.html: src/templates/index.pug src/tales/*.md
+build/index.html: src/templates/layout.pug src/templates/index.pug src/tales/*.md
 	./bin/index.py
 
 
 tales: mkdirs build/tale/*/index.html
 
-build/tale/%/index.html: src/templates/tale.pug src/tales/*-%.md
+build/tale/%/index.html: src/templates/layout.pug src/templates/tale.pug src/tales/*-%.md
 	./bin/tales.py $^
 
 
