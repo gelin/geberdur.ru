@@ -31,11 +31,31 @@ html(lang="ru")
   body
     script(type="text/javascript", src="/js/jquery-1.12.4.min.js")
     script(type="text/javascript", src="/js/theme-change.js")
+
     .container
-      .pull-right.hidden-print
-        button.btn.btn-default#theme-switch(type="button", title="День/Hoчь")
-          span.glyphicon.glyphicon-adjust
+
+      .btn-group.pull-right.hidden-print#theme-buttons
+        button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+          span.glyphicon.glyphicon-option-vertical
+        ul.dropdown-menu
+          li
+            a#theme-switch(href="#")
+              span.glyphicon.glyphicon-adjust
+              =' '
+              | День/Ночь
+          li
+            a#font-size-up(href="#")
+              span.glyphicon.glyphicon-text-size
+              =' '
+              | Крупнее
+          li
+            a#font-size-down(href="#")
+              span.glyphicon.glyphicon-text-size
+              =' '
+              | Мельче
+
       block content
+
     script(type="text/javascript", src="/js/bootstrap.min.js")
     script
       | (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
