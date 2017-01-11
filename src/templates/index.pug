@@ -6,6 +6,9 @@ block append head
 block append content
   .page-header
     h1 Сказки про Гебердура
+    small &copy; Gudez-z-z
+      =', '
+      a(href="https://creativecommons.org/licenses/by-nd/4.0/deed.ru", rel="license") CC BY-ND
   .list-group
     each tale in tales
       a.list-group-item(href='/tale/{}/'.format(tale.link))=tale.title
