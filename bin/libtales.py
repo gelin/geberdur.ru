@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Common library to list and render tales.
 """

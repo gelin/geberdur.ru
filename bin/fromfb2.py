@@ -8,6 +8,7 @@ import io
 import codecs
 import re
 from xml.dom import pulldom
+from libtypograf import typograf
 
 
 def parse_tales(fb2file):
@@ -52,6 +53,7 @@ def main(fb2file):
             i += 1
         file = 'src/tales/{0:04d}-{0:d}.md'.format(i)
         print('Writing', file)
+        tale = typograf(tale)
         with codecs.open(file, mode='w', encoding='utf-8') as mdfile:
             mdfile.write(tale)
         i += 1
