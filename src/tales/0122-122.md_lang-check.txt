@@ -1,0 +1,6 @@
+1.) Line 25, column 50, Rule ID: MORFOLOGIK_RULE_RU_RU
+Message: Найдена орфографическая ошибка
+Suggestion: Теберду
+...сем совесть потерял, ящерица недоделанная? — Гебердур слегка приподнялся с лежака, услышав такие с...
+                                                ^^^^^^^^                                             
+Time: 953ms for 58 sentences (60.9 sentences/sec)
