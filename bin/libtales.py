@@ -12,7 +12,7 @@ __all__ = ['TALE_PATTERN', 'tale_link', 'Tales']
 
 
 TALES_PATH = 'src/tales'
-TALE_PATTERN = re.compile(r'(.*/)?[^\-]+-(?P<link>.+).md')
+TALE_PATTERN = re.compile(r'(.*/)?[^\-]+-(?P<link>.+).md$')
 
 
 def tale_link(file_path):
