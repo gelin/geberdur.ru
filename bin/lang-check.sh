@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 if [ ! -f ~/opt/LanguageTool/languagetool-commandline.jar ]
 then
@@ -6,6 +6,16 @@ then
     echo And unpack it to ~/opt/LanguageTool/
     exit 1
 fi
+
+TOOL_SPELLING=~/opt/LanguageTool/org/languagetool/resource/ru/hunspell/spelling.txt
+THIS_SPELLING=$(dirname $0)/../src/tales/spelling.txt
+
+echo Adding to hunspell...
+for line in $(diff --new-line-format="" --unchanged-line-format="" <(sort "$THIS_SPELLING") <(sort "$TOOL_SPELLING"))
+do
+    echo $line
+    echo $line >> "$TOOL_SPELLING"
+done
 
 checkfile() {
     file="$1"

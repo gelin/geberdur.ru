@@ -1,12 +1,1 @@
-1.) Line 5, column 3, Rule ID: MORFOLOGIK_RULE_RU_RU
-Message: Найдена орфографическая ошибка
-Suggestion: Теберду
-... него никак не получалось себя заставить.  — Гебердур, иди, спасай мир, — говорил он себе, но прод...
-                                                ^^^^^^^^                                             
-
-2.) Line 15, column 3, Rule ID: MORFOLOGIK_RULE_RU_RU
-Message: Найдена орфографическая ошибка
-Suggestion: Теберду
-..., и уже чувствовалось — вот, скоро конец.  — Гебердур, — говорил себе тот человек, — ты можешь спа...
-                                                ^^^^^^^^                                             
-Time: 866ms for 22 sentences (25.4 sentences/sec)
+Time: 609ms for 22 sentences (36.1 sentences/sec)

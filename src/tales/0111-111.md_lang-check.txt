@@ -1,46 +1,28 @@
-1.) Line 3, column 1, Rule ID: MORFOLOGIK_RULE_RU_RU
-Message: Найдена орфографическая ошибка
-Suggestion: Теберду
-# Глава 111. Заклинание  Гебердур откинулся на спинку стула и пустым взглядом ...
-                         ^^^^^^^^                                             
-
-2.) Line 5, column 61, Rule ID: MORFOLOGIK_RULE_RU_RU
-Message: Найдена орфографическая ошибка
-Suggestion: Теберду
-...ыла закончена, и паук укрылся в темном углу, Гебердур грустно вздохнул и снова взялся за перо. К з...
-                                                ^^^^^^^^                                             
-
-3.) Line 7, column 6, Rule ID: MORFOLOGIK_RULE_RU_RU
+1.) Line 7, column 6, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: визам; визу; виз ум; визу м
 ...необходимо написать новое заклинание.   — Эк визум... — старательно вывел маг на куске пергамен...
                                                 ^^^^^                                             
 
-4.) Line 9, column 71, Rule ID: MORFOLOGIK_RULE_RU_RU
-Message: Найдена орфографическая ошибка
-Suggestion: Теберду
-...акое дурацкое заклинание, — вдруг воскликнул Гебердур, после созерцания свое работы, — вот, то ли ...
-                                                ^^^^^^^^                                             
-
-5.) Line 13, column 72, Rule ID: missing_noun_at_end[1]
+2.) Line 13, column 72, Rule ID: missing_noun_at_end[1]
 Message: Опущено существительное в конце предложения.
 ...ашел книгу и быстро перелистал страницы, ища нужную.   Страница находиться не желала, но маг был ...
                                                 ^^^^^^^                                             
 
-6.) Line 17, column 10, Rule ID: MORFOLOGIK_RULE_RU_RU
+3.) Line 17, column 10, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: город; огород; егоров; егором; Егором; Егоров; е город; его род; егор од
 ..., обнаружившего золотоносную жилу.  — Тов оп егород теде МИЗ, и ми я удуб мивадаз! — громко прод...
                                                 ^^^^^^                                             
 
-7.) Line 17, column 17, Rule ID: O_P_padeg[1]
+4.) Line 17, column 17, Rule ID: O_P_padeg[1]
 Message: Предложный падеж предполагает наличие предлога (о – обо – об; в – во; при; по; на): 'о теде', 'в теде', 'при теде', 'по теде', 'на теде'.
 Suggestion: о теде; в теде; при теде; по теде; на теде
 ...ужившего золотоносную жилу.  — Тов оп егород теде МИЗ, и ми я удуб мивадаз! — громко продеклам...
                                                 ^^^^                                             
 More info: http://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%BD%D1%8B%D0%B9_%D0%BF%D0%B0%D0%B4%D0%B5%D0%B6
 
-8.) Line 17, column 17, Rule ID: Cap_Letters_Name[1]
+5.) Line 17, column 17, Rule ID: Cap_Letters_Name[1]
 Message: Имя пишется с большой буквы: 'Теде'
             
 Suggestion: Теде
@@ -48,50 +30,26 @@ Suggestion: Теде
                                                 ^^^^                                             
 More info: http://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D0%B1%D1%83%D0%BA%D0%B2%D0%B0
 
-9.) Line 17, column 34, Rule ID: MORFOLOGIK_RULE_RU_RU
+6.) Line 17, column 34, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: дуб; уду; у дуб; уду б
 ...сную жилу.  — Тов оп егород теде МИЗ, и ми я удуб мивадаз! — громко продекламировал Гебердур, ...
                                                 ^^^^                                             
 
-10.) Line 17, column 39, Rule ID: MORFOLOGIK_RULE_RU_RU
+7.) Line 17, column 39, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 ...жилу.  — Тов оп егород теде МИЗ, и ми я удуб мивадаз! — громко продекламировал Гебердур, обращаяс...
                                                 ^^^^^^^                                             
 
-11.) Line 17, column 72, Rule ID: MORFOLOGIK_RULE_RU_RU
-Message: Найдена орфографическая ошибка
-Suggestion: Теберду
-... ми я удуб мивадаз! — громко продекламировал Гебердур, обращаясь к невидимой аудитории, — Какая фи...
-                                                ^^^^^^^^                                             
-
-12.) Line 19, column 299, Rule ID: MORFOLOGIK_RULE_RU_RU
-Message: Найдена орфографическая ошибка
-Suggestion: Теберду
-...есть работа, тем более деньги уже заплатили. Гебердур раздраженно уселся за стол и нацарапал ещё п...
-                                                ^^^^^^^^                                             
-
-13.) Line 21, column 3, Rule ID: MORFOLOGIK_RULE_RU_RU
-Message: Найдена орфографическая ошибка
-Suggestion: Теберду
-...Через пару минут ему снова стало скучно.   — Гебердур, — сказал он сам себе, — ты слишком долго во...
-                                                ^^^^^^^^                                             
-
-14.) Line 25, column 81, Rule ID: MORFOLOGIK_RULE_RU_RU
-Message: Найдена орфографическая ошибка
-Suggestion: Теберду
-... изумленно спросил заказчик, после того, как Гебердур показал заклинание в действии.  — Оно, не со...
-                                                ^^^^^^^^                                             
-
-15.) Line 27, column 90, Rule ID: MORFOLOGIK_RULE_RU_RU
+8.) Line 27, column 90, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: зловеще; зловещ; зловеща; зловещею; зловещее; зловещей; зловещем; зловещи; зловещие
 ...аг, сверкнув красными от недосыпа глазами, и зловещё расхохотался.   — Я же всего лишь хотел небо...
                                                 ^^^^^^^                                             
 
-16.) Line 29, column 160, Rule ID: UPPERCASE_SENTENCE_START
+9.) Line 29, column 160, Rule ID: UPPERCASE_SENTENCE_START
 Message: Это предложение не начинается с заглавной буквы
 Suggestion: Грибы
 ... небе, гигантские стрелки с надписью «грибы! грибы!» и разноцветные круги, опоясывающие скоплен...
                                                 ^^^^^                                             
-Time: 1388ms for 54 sentences (38.9 sentences/sec)
+Time: 1053ms for 54 sentences (51.3 sentences/sec)

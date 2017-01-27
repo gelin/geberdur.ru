@@ -1,71 +1,48 @@
-1.) Line 3, column 15, Rule ID: MORFOLOGIK_RULE_RU_RU
-Message: Найдена орфографическая ошибка
-Suggestion: Теберду
-# Глава 8  Когда усталый Гебердур выбрался из подземелья, волоча за хвост пове...
-                         ^^^^^^^^                                             
-
-2.) Line 5, column 19, Rule ID: MORFOLOGIK_RULE_RU_RU
-Message: Найдена орфографическая ошибка
-Suggestion: Теберду
-...разорять седельные сумки.  Щёлкнув пальцами, Гебердур испепелил молнией особо наглого поселенца. Л...
-                                                ^^^^^^^^                                             
-
-3.) Line 7, column 96, Rule ID: MORFOLOGIK_RULE_RU_RU
+1.) Line 7, column 96, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: жажда; каждая; жаждах; жаждал; жаждам; жаждав; жажд ая; жажда я
 ...лась на ветру, а глаза горели гневным огнём, жаждая справедливого возмездия.  — Дык, мы, это, уж...
                                                 ^^^^^^                                             
 
-4.) Line 9, column 3, Rule ID: MORFOLOGIK_RULE_RU_RU
+2.) Line 9, column 3, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: Дым; Рык; Дк; Днк; Бык; Дик; Дых; Дюк; Дек; Док; Дск; Дук; Дыб; Дыр; Лык; Тык; Зык; ДНК
 ...ым огнём, жаждая справедливого возмездия.  — Дык, мы, это, уж не ждали, — выступил староста. ...
                                                 ^^^                                             
 
-5.) Line 9, column 52, Rule ID: MORFOLOGIK_RULE_RU_RU
+3.) Line 9, column 52, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: Глядь; Ляд; Глад; Гляди; Глядя; Гряд
 ...мы, это, уж не ждали, — выступил староста. — Гляд, кудесника, уж целый день нету. Надось прове...
                                                 ^^^^                                             
 
-6.) Line 9, column 83, Rule ID: RU_SIMPLE_REPLACE
+4.) Line 9, column 83, Rule ID: RU_SIMPLE_REPLACE
 Message: нету - ошибочное слово/фраза, исправление: нет.
 Suggestion: нет
 ...л староста. — Гляд, кудесника, уж целый день нету. Надось проверить. А тут лошадка томится, по...
                                                 ^^^^                                             
 
-7.) Line 9, column 89, Rule ID: MORFOLOGIK_RULE_RU_RU
+5.) Line 9, column 89, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: Накось
 ...оста. — Гляд, кудесника, уж целый день нету. Надось проверить. А тут лошадка томится, под сумкам...
                                                 ^^^^^^                                             
 
-8.) Line 13, column 7, Rule ID: MORFOLOGIK_RULE_RU_RU
-Message: Найдена орфографическая ошибка
-...оела. Припасы тоже могли испортиться.  Голос Гебердура становился громче и под конец перечисления с...
-                                                ^^^^^^^^^                                             
-
-9.) Line 15, column 89, Rule ID: MORFOLOGIK_RULE_RU_RU
+6.) Line 15, column 89, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: танюшка; ванюшка; тварюга; зверюшка; Гаврюшка; Танюшка
 ...аг чуть-чуть сбавил обороты. — Та безобидная тварюшка, которая поселилась у вас в пещерах, оказала...
                                                 ^^^^^^^^                                             
 
-10.) Line 17, column 61, Rule ID: MORFOLOGIK_RULE_RU_RU
+7.) Line 17, column 61, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: тварюги; тварюгой; ванюшки; зверюшки; Танюшки
 ...десник, да мыслимое ли это дело, за убийство тварюшки столько брать? — запричитал староста. — Тем ...
                                                 ^^^^^^^^                                             
 
-11.) Line 17, column 292, Rule ID: MORFOLOGIK_RULE_RU_RU
+8.) Line 17, column 292, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: надыь
 ...сь, семь деток по лавкам, им теперь помогать надысь. Да и не было у нас никогда таких денег...  ...
                                                 ^^^^^^                                             
-
-12.) Line 19, column 11, Rule ID: MORFOLOGIK_RULE_RU_RU
-Message: Найдена орфографическая ошибка
-Suggestion: Теберду
-...было у нас никогда таких денег...  Довольный Гебердур мерно покачивался в седле своей лошади, медл...
-                                                ^^^^^^^^                                             
-Time: 1159ms for 41 sentences (35.4 sentences/sec)
+Time: 1475ms for 41 sentences (27.8 sentences/sec)

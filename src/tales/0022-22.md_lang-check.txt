@@ -1,113 +1,83 @@
-1.) Line 3, column 19, Rule ID: MORFOLOGIK_RULE_RU_RU
-Message: Найдена орфографическая ошибка
-Suggestion: Теберду
-# Глава 22  Вечером в пятницу Гебердур заглянул к своему другу Дракону на бочоночек...
-                              ^^^^^^^^                                             
-
-2.) Line 7, column 11, Rule ID: MORFOLOGIK_RULE_RU_RU
+1.) Line 7, column 11, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: хе-хе
 ...загородив массивным телом проход.  — Извини, кхе-кхе, дружище, я, кажется, простудился, кхе, — др...
                                                 ^^^^^^^                                             
 
-3.) Line 7, column 54, Rule ID: MORFOLOGIK_RULE_RU_RU
+2.) Line 7, column 54, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: хе; кае; кахе; кее; кие; кое; кохе; мхе; охе; яхе; ухе; эхе; к хе
 ..., кхе-кхе, дружище, я, кажется, простудился, кхе, — дракон мягко отстранил волшебника. — Дава...
                                                 ^^^                                             
 
-4.) Line 9, column 29, Rule ID: MORFOLOGIK_RULE_RU_RU
-Message: Найдена орфографическая ошибка
-Suggestion: Теберду
-...ь в другой раз.  — Хорошо, ты поправляйся, — Гебердур пошёл обратно, леветируя бочонок за собой.  ...
-                                                ^^^^^^^^                                             
-
-5.) Line 9, column 53, Rule ID: MORFOLOGIK_RULE_RU_RU
+3.) Line 9, column 53, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: леве тируя
 ...о, ты поправляйся, — Гебердур пошёл обратно, леветируя бочонок за собой.  Что-то не давало ему поко...
                                                 ^^^^^^^^^                                             
 
-6.) Line 13, column 54, Rule ID: MORFOLOGIK_RULE_RU_RU
-Message: Найдена орфографическая ошибка
-Suggestion: Теберду
-...он выгнал меня под угрозой смерти? — подумал Гебердур. — Надо разведать.  Он поставил бочонок в бл...
-                                                ^^^^^^^^                                             
-
-7.) Line 21, column 1, Rule ID: MORFOLOGIK_RULE_RU_RU
-Message: Найдена орфографическая ошибка
-Suggestion: Теберду
-...я светильник, и вся пещера залилась светом.  Гебердур, к своему удивлению, разглядел огромное ложе...
-                                                ^^^^^^^^                                             
-
-8.) Line 21, column 94, Rule ID: MORFOLOGIK_RULE_RU_RU
+4.) Line 21, column 94, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: эльфийки; эльфий ку
 ... ложе, застеленное шкурами, и лежащую на нём эльфийку. Самое удивительное было то, что маг считал ...
                                                 ^^^^^^^^                                             
 
-9.) Line 29, column 21, Rule ID: MORFOLOGIK_RULE_RU_RU
+5.) Line 29, column 21, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: эльфийки; эльфий ка
 ... пятиметрового монстра.  — Я даже не знаю, — эльфийка с лёгкостью поддержала игру. — Меня собиралс...
                                                 ^^^^^^^^                                             
 
-10.) Line 31, column 15, Rule ID: MORFOLOGIK_RULE_RU_RU
+6.) Line 31, column 15, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: взбрыкнул
 ...памятовала, как он выглядит.  — Это был я! — взрыкнул дракон и стремительно бросился к кровати.  —...
                                                 ^^^^^^^^                                             
 
-11.) Line 35, column 31, Rule ID: MORFOLOGIK_RULE_RU_RU
+7.) Line 35, column 31, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: альфика; эльфина; эльфира; эльфиса
 ... препятствие.  — О да, мой монстр, — сказала эльфика приблизившемуся дракону. Затем нежно взяла е...
                                                 ^^^^^^^                                             
 
-12.) Line 35, column 186, Rule ID: MORFOLOGIK_RULE_RU_RU
+8.) Line 35, column 186, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: эльфийки
 ... удовольствия, а затем прижался всем телом к эльфийке.  — Да, возьми меня, я так долго этого ждала...
                                                 ^^^^^^^^                                             
 
-13.) Line 41, column 1, Rule ID: MORFOLOGIK_RULE_RU_RU
+9.) Line 41, column 1, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: Альфика; Эльфина; Эльфира; Эльфиса
 ...мощными лапами, при этом ритмично двигаясь.  Эльфика цеплялась руками за чешую, то двигаясь на вс...
                                                 ^^^^^^^                                             
 
-14.) Line 41, column 320, Rule ID: missing_noun_at_end[1]
+10.) Line 41, column 320, Rule ID: missing_noun_at_end[1]
 Message: Опущено существительное в конце предложения.
 ..., заставляя его проникать глубже и двигаться быстрее. И тут их эмоции достигли пика, женщина, отки...
                                                 ^^^^^^^^                                             
 
-15.) Line 41, column 369, Rule ID: MORFOLOGIK_RULE_RU_RU
+11.) Line 41, column 369, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: откинулись; откинувшись
 ...рее. И тут их эмоции достигли пика, женщина, откинушись назад, сжалась в экстазе. Изо рта её раздалс...
                                                 ^^^^^^^^^^                                             
 
-16.) Line 41, column 486, Rule ID: MORFOLOGIK_RULE_RU_RU
+12.) Line 41, column 486, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: взбрыкнул
 ...дости наслаждения и удовольствия. В ответ ей взрыкнул дракон, сильнее прижимая к себе и с трудом с...
                                                 ^^^^^^^^                                             
 
-17.) Line 41, column 582, Rule ID: MORFOLOGIK_RULE_RU_RU
+13.) Line 41, column 582, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: альфику; эльфину; эльфиру; эльфису
 ... сдерживая мощный напор, способный разорвать эльфику на части.  Гебердур с трудом оторвался от ма...
                                                 ^^^^^^^                                             
 
-18.) Line 43, column 1, Rule ID: MORFOLOGIK_RULE_RU_RU
-Message: Найдена орфографическая ошибка
-Suggestion: Теберду
-...апор, способный разорвать эльфику на части.  Гебердур с трудом оторвался от магического глаза, утё...
-                                                ^^^^^^^^                                             
-
-19.) Line 43, column 86, Rule ID: MORFOLOGIK_RULE_RU_RU
+14.) Line 43, column 86, Rule ID: MORFOLOGIK_RULE_RU_RU
 Message: Найдена орфографическая ошибка
 Suggestion: афиг; нафис; намиг; тафиг; н афиг; на фиг
 ...го глаза, утёр пот со лба и, пробормотав «ну нафиг такие картинки», неуверенной поступью побрёл...
                                                 ^^^^^                                             
-Time: 1354ms for 48 sentences (35.5 sentences/sec)
+Time: 1336ms for 48 sentences (35.9 sentences/sec)
