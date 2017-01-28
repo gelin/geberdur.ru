@@ -1,1 +1,0 @@
-Time: 875ms for 15 sentences (17.1 sentences/sec)
