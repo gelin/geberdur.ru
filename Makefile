@@ -1,5 +1,5 @@
 RSYNC_USER?=gelin
-RSYNC_HOST?=141.8.195.84
+RSYNC_HOST?=ftp.gelin.ru
 RSYNC_REMOTE_PATH?=domains/geberdur.ru/public_html
 
 .PHONY: all
