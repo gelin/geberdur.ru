@@ -1,1 +1,0 @@
-Time: 617ms for 23 sentences (37.3 sentences/sec)

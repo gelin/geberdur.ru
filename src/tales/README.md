@@ -7,7 +7,7 @@
 ^^^^ обязательный префикс для сортировки файлов
     ^ дефис-разделитель
      ^^^^^^^^^ имя ссылки, сказка будет по url: /tale/link-name/
-              ^^^ обязательно расширение .md — Markdown
+              ^^^ обязательное расширение .md — Markdown
 ```
 
 Сам файл — в формате [Markdown](http://rukeba.com/by-the-way/markdown-sintaksis-po-russki/).
