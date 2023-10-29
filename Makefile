@@ -1,6 +1,9 @@
-RSYNC_USER?=gelin
-RSYNC_HOST?=ftp.gelin.ru
-RSYNC_REMOTE_PATH?=domains/geberdur.ru/public_html
+RSYNC_USER ?= root
+RSYNC_HOST ?= ftp.geberdur.ru
+RSYNC_REMOTE_PATH ?= /srv/www/geberdur.ru
+WWW_USER ?= www-data
+
+export SHELL = /usr/bin/zsh
 
 .PHONY: all
 all: build
@@ -14,11 +17,18 @@ build: static tales index feed 404
 
 .PHONY: deploy
 deploy:
-	rsync -rlptvz build/ $(RSYNC_USER)@$(RSYNC_HOST):$(RSYNC_REMOTE_PATH)/
+	rsync -rlptvz --chown=$(WWW_USER):$(WWW_USER) build/ $(RSYNC_USER)@$(RSYNC_HOST):$(RSYNC_REMOTE_PATH)/
 
-.PHONY: pip
-pip:
-	pip3 install -r requirements.txt
+.PHONY: init
+init:
+	pyenv install -s 3.8.18
+	pyenv virtualenv 3.8.18 geberdur || true
+	pyenv local geberdur
+	pyenv activate geberdur	
+
+.PHONY: install
+install:
+	pip install -r requirements.txt
 
 .PHONY: mkdirs
 mkdirs: build/tale
@@ -31,14 +41,14 @@ build/tale:
 index: mkdirs build/index.html
 
 build/index.html: src/templates/layout.pug src/templates/index.pug src/tales/*.md
-	./bin/index.py
+	python ./bin/index.py
 
 
 .PHONY: tales
 tales: mkdirs build/tale/*/index.html
 
 build/tale/%/index.html: src/templates/layout.pug src/templates/tale.pug src/tales/*-%.md
-	./bin/tales.py $^
+	python ./bin/tales.py $^
 
 
 .PHONY: static
@@ -56,14 +66,14 @@ build/.htaccess: src/static/.htaccess
 feed: mkdirs build/feed.xml
 
 build/feed.xml: src/templates/rss.pug src/tales/*.md
-	./bin/feed.py
+	python ./bin/feed.py
 
 
 .PHONY: 404
 404: mkdirs build/404.html
 
 build/404.html: src/templates/404.pug src/templates/layout.pug
-	./bin/404.py
+	python ./bin/404.py
 
 
 .PHONY: docker-build

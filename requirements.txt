@@ -1,3 +1,3 @@
-mako==1.0.7
-pypugjs==5.7.2
+mako==1.1.3
+pypugjs==5.9.12
 hoep==1.0.2
